@@ -1,0 +1,58 @@
+/* - Variáveis globais (paleta de cores reutilizável) - */
+:root{
+  --brand: #0643e9; /* Cor principal da marca */
+}
+
+/* -  Estilos gerais do corpo da página - */
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  /* Fonte moderna usada no site */
+
+  background: #eeeeee; 
+  /* Fundo cinza claro para destacar cards e seções */
+}
+
+/* - Marca (nome/logo escrita) no navbar - */
+header .navbar-brand {
+  font-weight: 700; /* Deixa o texto mais forte (bold) */
+}
+
+/* -  Seção HERO (capa) - */
+#hero {
+  /* Gradiente suave inspirado na cor padrão do Bootstrap (azul 13-110-253) */
+  background: linear-gradient(90deg, rgba(13,110,253,0.06), rgba(13,110,253,0.02));
+}
+
+/* -  Imagens superiores dos cards (ex: projetos) - */
+.card-img-top {
+  height: 180px;       /* Altura fixa para padronizar os cards */
+  object-fit: cover;   /* Evita distorção — recorta a imagem mantendo proporção */
+}
+
+/* -   Estrutura dos cards — mantém todos com a mesma altura - */
+
+/* Define que o card se comporta como um container flex vertical */
+.card.h-100 { 
+  display: flex;           
+  flex-direction: column;  
+}
+
+/* Faz o conteúdo do card (texto) ocupar o espaço necessário */
+.card .card-body { 
+  flex: 1 1 auto; 
+  /* Isso expande o body para igualar alturas dos cards */
+}
+
+/* -  Footer- */
+footer { 
+  background: #0b2a4a; /* Azul escuro */
+  color: #fff;         /* Texto branco para contraste */
+}
+
+/* -   Logo da navbar (caso exista foto pequena na barra) - */
+.logo-navbar{
+  width:35px;           /* Largura da imagem */
+  height:35px;          /* Altura da imagem */
+  border-radius:50%;    /* Torna a imagem redonda */
+  object-fit:cover;     /* Mantém proporção sem distorcer */
+}
